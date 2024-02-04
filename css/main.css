@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+/***
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+a, button {
+  cursor: revert;
+}
+
+ol, ul, menu, summary {
+  list-style: none;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: unset;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+/*
+End of _reset.scss
+*/
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-sm {
+  margin-top: 0.5rem !important;
+}
+
+.mt-md {
+  margin-top: 1rem !important;
+}
+
+.mt-lg {
+  margin-top: 1.5rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-sm {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-md {
+  margin-bottom: 1rem !important;
+}
+
+.mb-lg {
+  margin-bottom: 1.5rem !important;
+}
+
+.ms-0 {
+  margin-left: 0 !important;
+}
+
+.ms-sm {
+  margin-left: 0.5rem !important;
+}
+
+.ms-md {
+  margin-left: 1rem !important;
+}
+
+.ms-lg {
+  margin-left: 1.5rem !important;
+}
+
+.me-0 {
+  margin-right: 0 !important;
+}
+
+.me-sm {
+  margin-right: 0.5rem !important;
+}
+
+.me-md {
+  margin-right: 1rem !important;
+}
+
+.me-lg {
+  margin-right: 1.5rem !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-strong {
+  font-weight: 700;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem !important;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem !important;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem !important;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-weight: 700;
+  font-style: italic;
+}
+
+a {
+  display: inline-block;
+  text-decoration: underline;
+  color: #C54F00;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 0.5rem !important 1.5rem !important 0.5rem !important 1.5rem !important;
+  background-color: #f1c05c;
+  color: #404040;
+  font-weight: 600;
+  min-height: 45px;
+  min-width: 120px;
+  text-decoration: none;
+  line-height: 45px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #eba516;
+}
+
+.btn-primary {
+  border-radius: 6px;
+  padding: 0.5rem !important 1.5rem !important 0.5rem !important 1.5rem !important;
+  background-color: #C54F00;
+  color: #404040;
+  font-weight: 600;
+  min-height: 45px;
+  min-width: 120px;
+  text-decoration: none;
+  line-height: 45px;
+  text-align: center;
+  transition: background-color 0.3s;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #793000;
+}
+
+button {
+  border-radius: 6px;
+  padding: 0.5rem !important 1.5rem !important 0.5rem !important 1.5rem !important;
+  background-color: #f1c05c;
+  color: #404040;
+  font-weight: 600;
+  min-height: 45px;
+  min-width: 120px;
+  text-decoration: none;
+  line-height: 45px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #eba516;
+}
+
+/*# sourceMappingURL=main.css.map */

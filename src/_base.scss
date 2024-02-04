@@ -1,0 +1,65 @@
+// Base style for body
+@use 'variables';
+@use 'typography';
+@use 'utilities';
+@use 'styles';
+
+body {
+    font-family: variables.$font-stack;
+    font-size: 100%;
+}
+
+// Headings
+h1 {
+    font-size: typography.$font-xxl;
+    font-weight: typography.$font-extra-bold;
+    margin-bottom: variables.$mb-lg;
+}
+
+h2 {
+    font-size: typography.$font-xl;
+    font-weight: typography.$font-bold;
+    margin-bottom: variables.$mb-md;
+}
+
+h3 {
+    font-size: typography.$font-lg;
+    font-weight: typography.$font-bold;
+    margin-bottom: variables.$mb-md;
+}
+
+// Strong Text
+strong {
+    font-weight: typography.$font-bold;;
+}
+
+// Emphasized Text
+em {
+    font-weight: typography.$font-bold;
+    font-style: italic;
+}
+
+// Links
+a {
+    display: inline-block;
+    text-decoration: underline;
+    color: variables.$primary-color;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// Button
+.btn {
+    @include styles.btn;
+}
+
+.btn-primary {
+    @include styles.btn($bg-color: variables.$primary-color);
+    color: variables.$white;
+}
+
+button {
+    @include styles.btn;
+}

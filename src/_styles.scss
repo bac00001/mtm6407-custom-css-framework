@@ -1,0 +1,20 @@
+@use 'variables';
+
+// Button Styles
+@mixin btn($bg-color: variables.$default-color) {
+    border-radius: 6px;
+    padding: variables.$pt-sm variables.$pe-lg variables.$pb-sm variables.$ps-lg;
+    background-color: $bg-color;
+    color: variables.$secondary-color;
+    font-weight: 600;
+    min-height: 45px;
+    min-width: 120px;
+    text-decoration: none;
+    line-height: 45px;
+    text-align: center;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken($bg-color, 15%);
+    }
+}
