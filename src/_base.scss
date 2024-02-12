@@ -30,7 +30,7 @@ h3 {
 
 // Strong Text
 strong {
-    font-weight: typography.$font-bold;;
+    font-weight: typography.$font-bold;
 }
 
 // Emphasized Text
@@ -62,4 +62,21 @@ a {
 
 button {
     @include styles.btn;
+}
+
+//Navigation 
+.nav {
+    @include styles.nav;
+}
+
+.nav-item {
+    @include styles.nav-item;
+}
+
+.nav-link {
+    @include styles.nav-link;
+}
+
+.nav-pill {
+    @include styles.nav-pill;
 }
