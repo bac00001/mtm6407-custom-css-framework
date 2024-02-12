@@ -151,6 +151,416 @@ End of _reset.scss
   margin-right: 1.5rem !important;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-sm {
+  padding-top: 0.5rem !important;
+}
+
+.pt-md {
+  padding-top: 1rem !important;
+}
+
+.pt-lg {
+  padding-top: 1.5rem !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem !important;
+}
+
+.pb-md {
+  padding-bottom: 1rem !important;
+}
+
+.pb-lg {
+  padding-bottom: 1.5rem !important;
+}
+
+.ps-0 {
+  padding-left: 0 !important;
+}
+
+.ps-sm {
+  padding-left: 0.5rem !important;
+}
+
+.ps-md {
+  padding-left: 1rem !important;
+}
+
+.ps-lg {
+  padding-left: 1.5rem !important;
+}
+
+.pe-0 {
+  padding-right: 0 !important;
+}
+
+.pe-sm {
+  padding-right: 0.5rem !important;
+}
+
+.pe-md {
+  padding-right: 1rem !important;
+}
+
+.pe-lg {
+  padding-right: 1.5rem !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .d-md-flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .d-lg-flex {
+    display: flex;
+  }
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+@media (min-width: 576px) {
+  .d-md-inline-flex {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .d-lg-inline-flex {
+    display: inline-flex;
+  }
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+@media (min-width: 576px) {
+  .flex-md-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-lg-row {
+    flex-direction: row;
+  }
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 576px) {
+  .flex-md-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-lg-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .flex-md-column {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-lg-column {
+    flex-direction: column;
+  }
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 576px) {
+  .flex-md-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-lg-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+@media (min-width: 576px) {
+  .justify-content-md-start {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .justify-content-lg-start {
+    justify-content: flex-start;
+  }
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+@media (min-width: 576px) {
+  .justify-content-md-end {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .justify-content-lg-end {
+    justify-content: flex-end;
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .justify-content-md-center {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .justify-content-lg-center {
+    justify-content: center;
+  }
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) {
+  .justify-content-md-between {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .justify-content-lg-between {
+    justify-content: space-between;
+  }
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) {
+  .justify-content-md-around {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1200px) {
+  .justify-content-lg-around {
+    justify-content: space-around;
+  }
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+@media (min-width: 576px) {
+  .align-items-md-start {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-items-lg-start {
+    align-items: flex-start;
+  }
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+@media (min-width: 576px) {
+  .align-items-md-end {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-items-lg-end {
+    align-items: flex-end;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .align-items-md-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-items-lg-center {
+    align-items: center;
+  }
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+@media (min-width: 576px) {
+  .align-items-md-baseline {
+    align-items: baseline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-items-lg-baseline {
+    align-items: baseline;
+  }
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+@media (min-width: 576px) {
+  .align-items-md-stretch {
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-items-lg-stretch {
+    align-items: stretch;
+  }
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+@media (min-width: 576px) {
+  .align-self-md-start {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-self-lg-start {
+    align-self: flex-start;
+  }
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+@media (min-width: 576px) {
+  .align-self-md-end {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-self-lg-end {
+    align-self: flex-end;
+  }
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+@media (min-width: 576px) {
+  .align-self-md-center {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-self-lg-center {
+    align-self: center;
+  }
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+@media (min-width: 576px) {
+  .align-self-md-baseline {
+    align-self: baseline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-self-lg-baseline {
+    align-self: baseline;
+  }
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+@media (min-width: 576px) {
+  .align-self-md-stretch {
+    align-self: stretch;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-self-lg-stretch {
+    align-self: stretch;
+  }
+}
+
 .text-center {
   text-align: center;
 }
