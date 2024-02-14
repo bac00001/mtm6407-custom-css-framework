@@ -63,3 +63,20 @@ a {
 button {
     @include styles.btn;
 }
+
+//Navigation 
+.nav {
+    @include styles.nav;
+}
+
+.nav-item {
+    @include styles.nav-item;
+}
+
+.nav-link {
+    @include styles.nav-link;
+}
+
+.nav-pill {
+    @include styles.nav-pill;
+}
