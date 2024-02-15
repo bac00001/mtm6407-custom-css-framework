@@ -225,6 +225,111 @@ End of _reset.scss
   padding-right: 1.5rem !important;
 }
 
+.border {
+  border-width: 1.5px;
+  border-style: solid;
+}
+
+.border-top {
+  border-width: 1.5px;
+  border-top-style: solid;
+}
+
+.border-right {
+  border-width: 1.5px;
+  border-right-style: solid;
+}
+
+.border-bottom {
+  border-width: 1.5px;
+  border-bottom-style: solid;
+}
+
+.border-left {
+  border-width: 1.5px;
+  border-left-style: solid;
+}
+
+.border-0 {
+  border-style: none;
+}
+
+.border-top-0 {
+  border-top-style: none;
+}
+
+.border-right-0 {
+  border-right-style: none;
+}
+
+.border-bottom-0 {
+  border-bottom-style: none;
+}
+
+.border-left-0 {
+  border-left-style: none;
+}
+
+.border-default {
+  border-color: #f1c05c;
+}
+
+.border-primary {
+  border-color: #C54F00;
+}
+
+.border-secondary {
+  border-color: #404040;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.rounded {
+  border-radius: 6px;
+}
+
+.rounded-top-left {
+  border-top-left-radius: 6px;
+}
+
+.rounded-top-right {
+  border-top-right-radius: 6px;
+}
+
+.rounded-bottom-left {
+  border-bottom-left-radius: 6px;
+}
+
+.rounded-bottom-right {
+  border-bottom-right-radius: 6px;
+}
+
+.rounded-top {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.rounded-right {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.rounded-left {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.rounded-0 {
+  border-radius: 0;
+}
+
 .d-flex {
   display: flex;
 }
@@ -587,6 +692,10 @@ End of _reset.scss
   margin-bottom: 1rem;
 }
 
+.text-strong {
+  font-weight: 700;
+}
+
 .bg-default {
   background-color: #f1c05c;
 }
@@ -608,11 +717,19 @@ End of _reset.scss
 }
 
 .bg-secondary-light {
-  background-color: #737373;
+  background-color: silver;
 }
 
-.text-strong {
-  font-weight: 700;
+.shadow-sm {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 5px 20px 3px rgba(0, 0, 0, 0.17);
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 7px 20px 8px rgba(0, 0, 0, 0.17);
 }
 
 body {
@@ -621,20 +738,32 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1.5rem !important;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem !important;
 }
 
 h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem !important;
+}
+
+h4, h5, h6 {
   font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 1rem !important;
+}
+
+h5, h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 1rem !important;
 }
 
@@ -658,14 +787,14 @@ a:hover {
 
 .btn {
   border-radius: 6px;
-  padding: 0.5rem !important 1.5rem !important 0.5rem !important 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 1rem !important;
   background-color: #f1c05c;
   color: #404040;
   font-weight: 600;
-  min-height: 45px;
-  min-width: 120px;
   text-decoration: none;
-  line-height: 45px;
   text-align: center;
   transition: background-color 0.3s;
 }
@@ -675,14 +804,14 @@ a:hover {
 
 .btn-primary {
   border-radius: 6px;
-  padding: 0.5rem !important 1.5rem !important 0.5rem !important 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 1rem !important;
   background-color: #C54F00;
   color: #404040;
   font-weight: 600;
-  min-height: 45px;
-  min-width: 120px;
   text-decoration: none;
-  line-height: 45px;
   text-align: center;
   transition: background-color 0.3s;
   color: white;
@@ -691,16 +820,34 @@ a:hover {
   background-color: #793000;
 }
 
+.btn-secondary {
+  border-radius: 6px;
+  padding-top: 0.5rem !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 1rem !important;
+  background-color: #404040;
+  color: #404040;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+  color: white;
+}
+.btn-secondary:hover {
+  background-color: #1a1a1a;
+}
+
 button {
   border-radius: 6px;
-  padding: 0.5rem !important 1.5rem !important 0.5rem !important 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 1rem !important;
   background-color: #f1c05c;
   color: #404040;
   font-weight: 600;
-  min-height: 45px;
-  min-width: 120px;
   text-decoration: none;
-  line-height: 45px;
   text-align: center;
   transition: background-color 0.3s;
 }

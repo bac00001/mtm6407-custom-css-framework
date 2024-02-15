@@ -2,9 +2,6 @@
 @use 'typography';
 @use 'media-queries';
 
-// Border
-
-
 // Margin
 .mt-0 {
     margin-top: variables.$mt-0;
@@ -145,6 +142,113 @@
     padding-right: variables.$pe-lg;
 }
 
+// ********** Borders **********
+.border {
+    border-width: 1.5px;
+    border-style: solid;
+}
+
+.border-top {
+    border-width: 1.5px;
+    border-top-style: solid;
+}
+
+.border-right {
+    border-width: 1.5px;
+    border-right-style: solid;
+}
+
+.border-bottom {
+    border-width: 1.5px;
+    border-bottom-style: solid;
+}
+
+.border-left {
+    border-width: 1.5px;
+    border-left-style: solid;
+}
+
+.border-0 {
+    border-style: none;
+}
+
+.border-top-0 {
+    border-top-style: none;
+}
+
+.border-right-0 {
+    border-right-style: none;
+}
+
+.border-bottom-0 {
+    border-bottom-style: none;
+}
+
+.border-left-0 {
+    border-left-style: none;
+}
+
+// Border Colors
+.border-default {
+    border-color: variables.$default-color;
+}
+
+.border-primary {
+    border-color: variables.$primary-color;
+}
+
+.border-secondary {
+    border-color: variables.$secondary-color;
+}
+
+.border-white {
+    border-color: variables.$white;
+}
+
+// Border Radius
+.rounded {
+    border-radius: 6px;
+}
+
+.rounded-top-left {
+    border-top-left-radius: 6px;
+}
+
+.rounded-top-right {
+    border-top-right-radius: 6px;
+}
+
+.rounded-bottom-left {
+    border-bottom-left-radius: 6px;
+}
+
+.rounded-bottom-right {
+    border-bottom-right-radius: 6px;
+}
+
+.rounded-top {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.rounded-right {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.rounded-left {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.rounded-0 {
+    border-radius: 0;
+}
 
 // ********** Flex **********
 // Display Flex
@@ -517,6 +621,11 @@
     margin-bottom: 1rem;
 }
 
+// Strong
+.text-strong {
+    font-weight: typography.$font-bold;
+}
+
 // Background Colors
 .bg-default {
     background-color: variables.$default-color;
@@ -539,10 +648,18 @@
 }
 
 .bg-secondary-light {
-    background-color: lighten(variables.$secondary-color, 20%);
+    background-color: lighten(variables.$secondary-color,50%);
 }
 
-// Strong
-.text-strong {
-    font-weight: typography.$font-bold;
+// Box Shadow
+.shadow-sm {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18) , 0 5px 20px 3px rgba(0, 0, 0, 0.17);
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18) , 0 7px 20px 8px rgba(0, 0, 0, 0.17);
 }

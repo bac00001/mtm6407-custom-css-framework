@@ -28,6 +28,18 @@ h3 {
     margin-bottom: variables.$mb-md;
 }
 
+h4, h5, h6 {
+    font-size: typography.$font-md;
+    font-weight: typography.$font-bold;
+    margin-bottom: variables.$mb-md;
+}
+
+h5, h6 {
+    font-size: typography.$font-md;
+    font-weight: typography.$font-semibold;
+    margin-bottom: variables.$mb-md;
+}
+
 // Strong Text
 strong {
     font-weight: typography.$font-bold;;
@@ -57,6 +69,11 @@ a {
 
 .btn-primary {
     @include styles.btn($bg-color: variables.$primary-color);
+    color: variables.$white;
+}
+
+.btn-secondary {
+    @include styles.btn($bg-color: variables.$secondary-color);
     color: variables.$white;
 }
 

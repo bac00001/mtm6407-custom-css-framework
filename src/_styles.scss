@@ -3,14 +3,14 @@
 // Button Styles
 @mixin btn($bg-color: variables.$default-color) {
     border-radius: 6px;
-    padding: variables.$pt-sm variables.$pe-lg variables.$pb-sm variables.$ps-lg;
+    padding-top: variables.$pt-sm;
+    padding-right: variables.$pe-md;
+    padding-bottom: variables.$pb-sm;
+    padding-left: variables.$ps-md;
     background-color: $bg-color;
     color: variables.$secondary-color;
     font-weight: 600;
-    min-height: 45px;
-    min-width: 120px;
     text-decoration: none;
-    line-height: 45px;
     text-align: center;
     transition: background-color 0.3s;
 
@@ -27,7 +27,6 @@
     margin-bottom: variables.$mb-0;
     list-style: none;
     text-align: center;
-
 }
 
 @mixin nav-item {
