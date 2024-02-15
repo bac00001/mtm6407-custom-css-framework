@@ -18,3 +18,37 @@
         background-color: darken($bg-color, 15%);
     }
 }
+
+// Navigation 
+
+@mixin nav {
+    padding: variables.$pb-sm;
+    margin: 0 auto;
+    margin-bottom: variables.$mb-0;
+    list-style: none;
+    text-align: center;
+
+}
+
+@mixin nav-item {
+    display: inline;
+    margin-right: 1rem;
+}
+
+@mixin nav-link {
+    text-decoration: none;
+    color: variables.$primary-color;
+    padding: 0.5rem; /* Add padding for better spacing */
+
+    &:hover {
+        text-decoration: underline;
+        color: variables.$secondary-color;
+    }
+}
+
+@mixin nav-pill {
+    padding: 0.5rem 1rem;
+    background-color: variables.$primary-color;
+    color: variables.$white;
+    border-radius: 0.25rem;
+}

@@ -489,9 +489,57 @@
     }
 }
 
+
 // Text Alignment
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.blockquote {
+    margin: 0 0 1rem;
+    font-style: oblique;
+}
+
+.blockquote-footer {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+// Background Colors
+.bg-default {
+    background-color: variables.$default-color;
+}
+
+.bg-primary {
+    background-color: variables.$primary-color;
+}
+
+.bg-secondary {
+    background-color: variables.$secondary-color;
+}
+
+.bg-default-light {
+    background-color: lighten(variables.$default-color, 20%);
+}
+
+.bg-primary-light {
+    background-color: lighten(variables.$primary-color, 20%);
+}
+
+.bg-secondary-light {
+    background-color: lighten(variables.$secondary-color, 20%);
 }
 
 // Strong
