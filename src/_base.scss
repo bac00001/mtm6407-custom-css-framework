@@ -115,3 +115,37 @@ thead, th {
 .table {
     display: table;
 }
+
+// List
+ul, ol, dl {
+    display: block;
+    margin-block-start: .5rem;
+    margin-block-end: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-inline-start: 2rem;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-inline-start: 2rem;
+}
+
+li {
+    display: list-item;
+    text-align: match-parent;
+}
+
+dl {
+    padding-inline-start: 1rem;
+}
+
+dt {
+    font-weight: typography.$font-bold;
+}
+
+dd {
+    margin-bottom: .5rem;
+}

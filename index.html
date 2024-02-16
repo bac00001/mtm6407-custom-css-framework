@@ -33,6 +33,7 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
 
+        <!-- Paragraph with some text -->
         <p class="text-center">Lorem ipsum <em>dolor sit amet consectetur</em> adipisicing elit. Laudantium velit minima
             at quaerat temporibus omnis, repellat, nobis voluptatem enim unde corporis doloribus, adipisci ratione
             nesciunt dolore eos iste sequi quam.</p>
@@ -46,22 +47,75 @@
 
         <span class="text-strong">This text is also looking strong.</span>
 
-        <a href="https://google.com">Visit Google</a>
+        <!-- Link and Button -->
+        <div class="mt-md mb-md">
+          <p>Here are examples of link and buttons.</p>
+          <a href="https://google.com">Visit Google</a>
 
-        <a class="btn" href="https://google.com">Visit Google</a>
+          <br>
+          
+          <a class="btn" href="https://google.com">Visit Google</a>
 
-        <a class="btn btn-primary" href="https://google.com">Visit Google</a>
+          <a class="btn btn-primary" href="https://google.com">Visit Google</a>
 
-        <button type="button" class="border border-bottom-0 border-primary">Regular Button</button>
-
+          <button type="button" class="border border-bottom-0 border-primary">Regular Button</button>
+        </div>
+        
         <!-- Blockquote-->
         <blockquote class="blockquote text-right">
             <p>"Here is a blockquote. It might contain some meaningful content."</p>
             <footer class="blockquote-footer">- Someone famous</footer>
         </blockquote>
 
+        <!-- List -->
+        <div>
+          <p>An unordered list:</p>
+          <ul>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ul>
 
-        <div class="container" style="background-color: aliceblue;">
+          <p>An ordered list:</p>
+          <ol>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ol>
+
+          <p>And an Description list:</p>
+          <dl>
+            <dt>Title</dt>
+            <dd>Description</dd>
+            <dt>Title</dt>
+            <dd>Description</dd>
+          </dl>
+        </div>
+
+        <!-- Form -->
+        <p>Here is an example of a form to submit.</p>
+        <form>
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Enter your name..">
+          </div>
+          <div>
+            <label for="language">Language</label>
+            <select name="language" id="language">
+              <option value="English">English</option>
+              <option value="French">French</option>
+            </select>
+          </div>
+          <div>
+            <label for="textarea">Tell me what you think</label>
+            <textarea id="textarea" cols="30" rows="5" placeholder="Enter the content.."></textarea>
+          </div>
+            
+            <input type="submit" value="submit" class="btn">
+        </form>
+        
+        <!-- Grid -->
+        <div class="container mt-md mb-md" style="background-color: aliceblue;">
             <div class="row grid-gap-lg">
               <div class="col" style="background-color: antiquewhite;">
                 1 of 2
@@ -83,7 +137,8 @@
             </div>
         </div>
 
-        <table class="table">
+        <!-- Table -->
+        <table class="table mt-md mb-md">
             <thead class="bg-default">
               <tr>
                 <th scope="col" class="col-3">#</th>

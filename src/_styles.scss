@@ -51,3 +51,22 @@
     color: variables.$white;
     border-radius: 0.25rem;
 }
+
+// Input, Textarea, and Select options
+input, textarea, select {
+    background-color: variables.$white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: variables.$default-color;
+    padding: .3rem;
+}
+
+::-webkit-input-placeholder {
+    opacity: .5;
+    font-size: .8rem;
+}
+
+select {
+    color: variables.$primary-color;
+    appearance: auto;
+}
