@@ -13,31 +13,31 @@ body {
 h1 {
     font-size: typography.$font-xxl;
     font-weight: typography.$font-extra-bold;
-    margin-bottom: variables.$mb-lg;
+    margin-bottom: variables.$mb-3;
 }
 
 h2 {
     font-size: typography.$font-xl;
     font-weight: typography.$font-bold;
-    margin-bottom: variables.$mb-md;
+    margin-bottom: variables.$mb-2;
 }
 
 h3 {
     font-size: typography.$font-lg;
     font-weight: typography.$font-bold;
-    margin-bottom: variables.$mb-md;
+    margin-bottom: variables.$mb-2;
 }
 
 h4 {
     font-size: typography.$font-md;
     font-weight: typography.$font-bold;
-    margin-bottom: variables.$mb-md;
+    margin-bottom: variables.$mb-2;
 }
 
 h5, h6 {
     font-size: typography.$font-md;
     font-weight: typography.$font-semibold;
-    margin-bottom: variables.$mb-md;
+    margin-bottom: variables.$mb-2;
 }
 
 // Strong Text
@@ -81,12 +81,8 @@ button {
     @include styles.btn;
 }
 
-//Navigation 
-nav {
-    @include styles.nav;
-}
-
-.nav {
+//Navigation
+nav, .nav {
     @include styles.nav;
 }
 
@@ -103,6 +99,14 @@ nav {
 }
 
 // Table
+.table {
+    display: table;
+}
+
+table, .table {
+    margin: 5px 0 25px 0;
+}
+
 tr {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -112,6 +116,19 @@ thead, th {
     font-weight: typography.$font-bold;
 }
 
-.table {
-    display: table;
+.table-dark {
+    background-color: variables.$secondary-color;
+    color: variables.$white;
+}
+
+.table-bordered {
+    table, th, td {
+        border: 1px solid lighten(variables.$secondary-color, 50%);
+    }
+}
+
+.table-borderless {
+    table, th, td {
+        border: none;
+    }
 }

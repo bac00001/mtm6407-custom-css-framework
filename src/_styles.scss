@@ -3,15 +3,19 @@
 // Button Styles
 @mixin btn($bg-color: variables.$default-color) {
     border-radius: 6px;
-    padding-top: variables.$pt-sm;
-    padding-right: variables.$pe-md;
-    padding-bottom: variables.$pb-sm;
-    padding-left: variables.$ps-md;
+    padding-top: variables.$pt-1;
+    padding-right: variables.$pe-2;
+    padding-bottom: variables.$pb-1;
+    padding-left: variables.$ps-2;
     background-color: $bg-color;
     color: variables.$secondary-color;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
+    margin-top: variables.$mt-1;
+    margin-right: variables.$me-2;
+    margin-bottom: variables.$mb-1;
+    margin-left: variables.$ms-2;
     transition: background-color 0.3s;
 
     &:hover {
@@ -22,22 +26,21 @@
 // Navigation 
 
 @mixin nav {
-    padding: variables.$pb-sm;
+    padding: variables.$pb-1;
     margin: 0 auto;
-    margin-bottom: variables.$mb-0;
     list-style: none;
     text-align: center;
 }
 
 @mixin nav-item {
     display: inline;
-    margin-right: 1rem;
+    margin-right: variables.$me-2;
 }
 
 @mixin nav-link {
     text-decoration: none;
     color: variables.$primary-color;
-    padding: 0.5rem; /* Add padding for better spacing */
+    padding: variables.$ps-1; /* Add padding for better spacing */
 
     &:hover {
         text-decoration: underline;

@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <div class="container">
+      <div class="container">
         <!-- Headings -->
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -33,87 +33,118 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
 
-        <p class="text-center">Lorem ipsum <em>dolor sit amet consectetur</em> adipisicing elit. Laudantium velit minima
-            at quaerat temporibus omnis, repellat, nobis voluptatem enim unde corporis doloribus, adipisci ratione
-            nesciunt dolore eos iste sequi quam.</p>
-        <p>Lorem <strong>ipsum dolor sit amet</strong> consectetur adipisicing elit. Laudantium velit minima at quaerat
-            temporibus omnis, repellat, nobis voluptatem enim unde corporis doloribus, adipisci ratione nesciunt dolore
-            eos iste sequi quam.</p>
-
-        <div>
-            <p class="mt-0">This is some text.</p>
-        </div>
-
-        <span class="text-strong">This text is also looking strong.</span>
-
-        <a href="https://google.com">Visit Google</a>
-
-        <a class="btn" href="https://google.com">Visit Google</a>
-
-        <a class="btn btn-primary" href="https://google.com">Visit Google</a>
-
-        <button type="button" class="border border-bottom-0 border-primary">Regular Button</button>
-
-        <!-- Blockquote-->
-        <blockquote class="blockquote text-right">
-            <p>"Here is a blockquote. It might contain some meaningful content."</p>
-            <footer class="blockquote-footer">- Someone famous</footer>
-        </blockquote>
-
-
-        <div class="container" style="background-color: aliceblue;">
-            <div class="row grid-gap-lg">
-              <div class="col" style="background-color: antiquewhite;">
+        <h4>Grid</h4>
+        <div class="container mx-3 bg-default-light">
+            <div class="row grid-gap-3">
+              <div class="col-6 bg-default">
                 1 of 2
               </div>
-              <div class="col" style="background-color: antiquewhite;">
+              <div class="col-6 bg-default">
                 2 of 2
               </div>
             </div>
-            <div class="row">
-              <div class="col">
+            <div class="row grid-gap-2">
+              <div class="col-4 bg-primary-light">
                 1 of 3
               </div>
-              <div class="col">
+              <div class="col-4 bg-primary-light">
                 2 of 3
               </div>
-              <div class="col">
+              <div class="col-4 bg-primary-light">
                 3 of 3
               </div>
             </div>
         </div>
+        <br>
 
-        <table class="table">
-            <thead class="bg-default">
-              <tr>
-                <th scope="col" class="col-3">#</th>
-                <th scope="col" class="col-3">First</th>
-                <th scope="col" class="col-3">Last</th>
-                <th scope="col" class="col-3">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="col-3">1</th>
-                <td class="col-3">Mark</td>
-                <td class="col-3">Otto</td>
-                <td class="col-3">@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row" class="col-3">2</th>
-                <td class="col-3">Jacob</td>
-                <td class="col-3">Thornton</td>
-                <td class="col-3">@fat</td>
-              </tr>
-              <tr>
-                <th scope="row" class="col-3">3</th>
-                <td class="col-3">Larry</td>
-                <td class="col-3">Bird</td>
-                <td class="col">@twitter</td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
+        <h4>Flexbox</h4>
+        <div class="d-flex flex-row mx-3 bg-default-light">
+          <div class="p-2 bg-default">Flex item 1</div>
+          <div class="p-2 bg-default">Flex item 2</div>
+          <div class="p-2 bg-default">Flex item 3</div>
+        </div>
+        <div class="d-flex flex-row-reverse mx-3 bg-default-light mb-3">
+          <div class="p-2 bg-primary-light">Flex item 1</div>
+          <div class="p-2 bg-primary-light">Flex item 2</div>
+          <div class="p-2 bg-primary-light">Flex item 3</div>
+        </div>
+
+        <h4>Flexbox Alignment</h4>
+        <div class="d-flex flex-row justify-content-between mx-3 bg-default-light">
+            <div class="p-2 bg-default">Flex item 1</div>
+            <div class="p-2 bg-default">Flex item 2</div>
+            <div class="p-2 bg-default">Flex item 3</div>
+        </div>
+        <div class="d-flex flex-column align-items-end mx-3 bg-default-light mb-3">
+            <div class="p-2 bg-primary-light">Flex item 1</div>
+            <div class="p-2 align-self-center bg-primary-light">Flex item 2</div>
+            <div class="p-2 bg-primary-light">Flex item 3</div>
+        </div>
+
+
+        <h4>Table</h4>
+        <div class="row mx-3">
+          <table class="table col-12">
+              <thead class="bg-default">
+                <tr>
+                  <th scope="col" class="col-3">#</th>
+                  <th scope="col" class="col-3">First</th>
+                  <th scope="col" class="col-3">Last</th>
+                  <th scope="col" class="col-3">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="col-3">1</th>
+                  <td class="col-3">Mark</td>
+                  <td class="col-3">Otto</td>
+                  <td class="col-3">@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="col-3">2</th>
+                  <td class="col-3">Jacob</td>
+                  <td class="col-3">Thornton</td>
+                  <td class="col-3">@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="col-3">3</th>
+                  <td class="col-3">Larry</td>
+                  <td class="col-3">Bird</td>
+                  <td class="col-3">@twitter</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <!-- Text -->
+        <h4>Text</h4>
+        <p class="text-right">This text is aligned right and is <em>emphasized</em>.</p>
+        <p class="text-center">This text is centered and <strong>looking strong</strong></p>
+        <span class="text-strong">This text is also looking strong.</span>
+        <!-- Blockquote-->
+        <blockquote class="blockquote">
+          <p>"Here is a blockquote. It might contain some meaningful content."</p>
+          <footer class="blockquote-footer">- Someone famous</footer>
+        </blockquote>
+
+        <h4>Buttons</h4>
+        <a href="#">This is a link</a>
+        <a class="btn" href="#">Link Button</a>
+        <button type="button">Regular Button</button>
+        <a class="btn btn-primary" href="#">Primary Button</a>
+        <a class="btn btn-secondary" href="#">Secondary Button</a>
+
+        <h4>Background Colors</h4>
+        <div class="w-50 mx-auto bg-default text-center">bg-default</div>
+        <div class="w-50 mx-auto bg-primary text-light text-center">bg-primary</div>
+        <div class="w-50 mx-auto bg-secondary text-light text-center">bg-secondary</div>
+        <div class="w-50 mx-auto bg-default-light text-center">bg-default-light</div>
+        <div class="w-50 mx-auto bg-primary-light text-center">bg-primary-light</div>
+        <div class="w-50 mx-auto bg-secondary-light text-center mb-3">bg-secondary-light</div>
+
+
+        
+      </div>
     </main>
 </body>
 
