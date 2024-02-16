@@ -423,3 +423,67 @@ Example:
     </table>
 </div>
 ```
+
+#### Lists
+Bow Tie CSS offers basic, default styling for unordered lists, ordered lists, and description lists.
+
+Example:
+![Bow Tie CSS Lists Example.](images/lists-example.png)
+
+(Code)
+```
+<div>
+    <p>An unordered list:</p>
+    <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ul>
+
+    <p>An ordered list:</p>
+    <ol>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ol>
+
+    <p>And an Description list:</p>
+    <dl>
+        <dt>Title</dt>
+        <dd>Description</dd>
+        <dt>Title</dt>
+        <dd>Description</dd>
+    </dl>
+</div>
+```
+
+#### Forms
+Bow Tie CSS offers basic, default styling for form elements:
+
+Example:
+![Bow Tie CSS Form Example.](images/form-example.png)
+
+(Code)
+```
+<form class="container w-75 my-3">
+    <div class="row text-left mb-2">
+        <label for="name" class="col-4">Full Name</label>
+        <input type="text" class="col-8 " placeholder="Enter your name..">
+    </div>
+
+    <div class="row text-left mb-2">
+        <label for="language" class="col-4">Language</label>
+        <select name="language" id="language" class="col-8">
+            <option value="English">English</option>
+            <option value="French">French</option>
+        </select>
+    </div>
+
+    <div class="row text-left">
+        <label for="textarea" class="col-4">Tell me what you think</label>
+        <textarea id="textarea" cols="30" rows="5" placeholder="Enter the content.." class="col-8"></textarea>
+    </div>
+    
+    <input type="submit" value="submit" class="btn float-right">
+</form>
+```

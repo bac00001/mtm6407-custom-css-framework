@@ -132,3 +132,56 @@ thead, th {
         border: none;
     }
 }
+
+// List
+ul, ol, dl {
+    display: block;
+    margin-block-start: .5rem;
+    margin-block-end: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-inline-start: 2rem;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-inline-start: 2rem;
+}
+
+li {
+    display: list-item;
+    text-align: match-parent;
+}
+
+dl {
+    padding-inline-start: 1rem;
+}
+
+dt {
+    font-weight: typography.$font-bold;
+}
+
+dd {
+    margin-bottom: .5rem;
+}
+
+// Input, Textarea, and Select options
+input, textarea, select {
+    background-color: variables.$white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: variables.$default-color;
+    padding: .3rem;
+}
+
+::-webkit-input-placeholder {
+    opacity: .5;
+    font-size: .8rem;
+}
+
+select {
+    color: variables.$primary-color;
+    appearance: auto;
+}

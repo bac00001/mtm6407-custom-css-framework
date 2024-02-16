@@ -1415,6 +1415,100 @@ blockquote, .blockquote {
     height: auto;
   }
 }
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-none {
+  display: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+
+@media (min-width: 768px) {
+  .d-md-inline {
+    display: inline;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-inline-block {
+    display: inline-block;
+  }
+  .d-md-none {
+    display: none;
+  }
+  .float-md-left {
+    float: left;
+  }
+  .float-md-right {
+    float: right;
+  }
+  .float-md-none {
+    float: none;
+  }
+}
+@media (min-width: 1200px) {
+  .d-lg-inline {
+    display: inline;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+  .d-lg-none {
+    display: none;
+  }
+  .float-lg-left {
+    float: left;
+  }
+  .float-lg-right {
+    float: right;
+  }
+  .float-lg-none {
+    float: none;
+  }
+}
+.position-static {
+  position: static;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
@@ -1611,6 +1705,57 @@ thead, th {
 
 .table-borderless table, .table-borderless th, .table-borderless td {
   border: none;
+}
+
+ul, ol, dl {
+  display: block;
+  margin-block-start: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-inline-start: 2rem;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-inline-start: 2rem;
+}
+
+li {
+  display: list-item;
+  text-align: match-parent;
+}
+
+dl {
+  padding-inline-start: 1rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+}
+
+input, textarea, select {
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f1c05c;
+  padding: 0.3rem;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+select {
+  color: #C54F00;
+  appearance: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

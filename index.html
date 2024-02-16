@@ -142,7 +142,53 @@
         <div class="w-50 mx-auto bg-primary-light text-center">bg-primary-light</div>
         <div class="w-50 mx-auto bg-secondary-light text-center mb-3">bg-secondary-light</div>
 
+        <!-- List -->
+        <div>
+          <p>An unordered list:</p>
+          <ul>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ul>
 
+          <p>An ordered list:</p>
+          <ol>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ol>
+
+          <p>And an Description list:</p>
+          <dl>
+            <dt>Title</dt>
+            <dd>Description</dd>
+            <dt>Title</dt>
+            <dd>Description</dd>
+          </dl>
+        </div>
+        <br>
+
+        <!-- Form -->
+        <p>Here is an example of a form to submit.</p>
+        <form class="container w-75 my-3">
+          <div class="row text-left mb-2">
+            <label for="name" class="col-4">Full Name</label>
+            <input type="text" class="col-8 " placeholder="Enter your name..">
+          </div>
+          <div class="row text-left mb-2">
+            <label for="language" class="col-4">Language</label>
+            <select name="language" id="language" class="col-8">
+              <option value="English">English</option>
+              <option value="French">French</option>
+            </select>
+          </div>
+          <div class="row text-left">
+            <label for="textarea" class="col-4">Tell me what you think</label>
+            <textarea id="textarea" cols="30" rows="5" placeholder="Enter the content.." class="col-8"></textarea>
+          </div>
+            
+          <input type="submit" value="submit" class="btn float-right">
+        </form>
         
       </div>
     </main>
