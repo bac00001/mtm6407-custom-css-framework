@@ -28,7 +28,7 @@ h3 {
     margin-bottom: variables.$mb-md;
 }
 
-h4, h5, h6 {
+h4 {
     font-size: typography.$font-md;
     font-weight: typography.$font-bold;
     margin-bottom: variables.$mb-md;
@@ -82,6 +82,10 @@ button {
 }
 
 //Navigation 
+nav {
+    @include styles.nav;
+}
+
 .nav {
     @include styles.nav;
 }
@@ -96,4 +100,18 @@ button {
 
 .nav-pill {
     @include styles.nav-pill;
+}
+
+// Table
+tr {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+} 
+
+thead, th {
+    font-weight: typography.$font-bold;
+}
+
+.table {
+    display: table;
 }
