@@ -480,10 +480,10 @@ Example:
     </div>
 
     <div class="row text-left">
-        <label for="textarea" class="col-4">Tell me what you think</label>
+        <label for="textarea" class="col-4">Tell me know what you think</label>
         <textarea id="textarea" cols="30" rows="5" placeholder="Enter the content.." class="col-8"></textarea>
     </div>
     
-    <input type="submit" value="submit" class="btn float-right">
+    <input type="submit" value="Submit" class="btn float-right">
 </form>
 ```
